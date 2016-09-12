@@ -2,13 +2,14 @@ var request = require('request');
 
 var calls = 0;
 var start_time = new Date().getTime();
-var monitor_url = "http://127.0.0.1:3100/register";
+var client_url = "http://127.0.0.1:3001/status";
+var server_url = "http://127.0.0.1:3100/register";
 var name = "service_name";
 var initialized = false;
 
 function initialize()
 {
-    request(monitor_url + "?name=" + name + "&url=http://127.0.0.1:3001/status", function (error, response, body) {
+    request(server_url + "?name=" + name + "&url=" + client_url, function (error, response, body) {
         if (!error) {
             console.log(body);
         }
@@ -37,7 +38,8 @@ function status()
 
 function UpWatcher(config = {})
 {
-    monitor_url = config.url || monitor_url;
+    server_url = config.server_url || server_url;
+    client_url = config.client_url || client_url;
     name = config.name || name;
 
     if (!initialized)
