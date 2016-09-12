@@ -1,6 +1,6 @@
 {
   "name": "koa-upwatcher-client",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A super-simplistic monitor for koa, fit for a service-based architehture. !Heavily WIP!",
   "main": "upwatcher.js",
   "scripts": {
