@@ -1,0 +1,22 @@
+{
+  "name": "koa-upwatcher-client",
+  "version": "0.0.1",
+  "description": "A super-simplistic monitor for koa, fit for a service-based architehture. !Heavily WIP!",
+  "main": "upwatcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uplause/koa-upwatcher-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uplause/koa-upwatcher-client/issues"
+  },
+  "homepage": "https://github.com/Uplause/koa-upwatcher-client#readme",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
