@@ -11,11 +11,11 @@ function initialize()
 {
     request(server_url + "?name=" + name + "&url=" + client_url, function (error, response, body) {
         if (!error) {
-            console.log(body);
+            
         }
         else
         {
-            console.log("Error connecting to monitor: " + error);
+            
         }
     })
 }
@@ -50,9 +50,7 @@ function UpWatcher(config = {})
 
     UpWatcher.status = function*()
     {
-        console.log("Responding..");
 
-        
     }
 
     return inc_call;
